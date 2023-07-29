@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skills</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Skills</h1>
+    <ul>
+      <% skills.forEach((s) => { %>
+        <li>
+          <a href="/skills/<%=s.id %>"><%= s.id %>
+            -
+            <%= s.language %>
+          </a>
+        </li>
+        <% }); %>
+      </ul>
+      <br><br>
+      <a href="/">Back</a>
+  </body>
+</html>
